@@ -1,0 +1,11 @@
+<div class="question-tile" 
+    *ngFor="let question of questionsArray">
+    <div class="on-top-question" (click)="toggle($event)"></div>
+    <div class="question-and-icon">
+      <h6 class="question">{{ question.questionTitle }}</h6>
+      <div class="question-icon"><i class="fas fa-chevron-right"></i></div>
+    </div>
+    <p class="faq-answer">
+      {{ question.questionAnswer }}
+    </p>
+</div>

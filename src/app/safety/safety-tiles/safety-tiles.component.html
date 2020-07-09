@@ -1,0 +1,9 @@
+<div class="safety-tile" *ngFor="let tile of tilesArray">
+    <div class="safety-tile-content">
+      <div class="safety-icon-and-title">
+        <div class=safety-icon-background><i class="{{ tile.tileIcon }}"></i></div>
+        <span class="safety-tile-title">{{ tile.tileTitle }}</span>
+      </div>
+      <p class="safety-tile-paragraph">{{ tile.tileParagraph }}</p>
+    </div>
+</div>

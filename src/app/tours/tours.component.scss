@@ -1,0 +1,85 @@
+.tours-section {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    background-color: #FFFFF3;
+    .container{
+        padding: 0;
+    }
+}
+
+.tours-slider{
+    position: relative;
+    overflow-x: hidden;
+    background-color: #211A21;
+}
+
+.tours-container {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+}
+
+.book-now-button {
+    width: 100%;
+    padding: 0 15px;
+    box-sizing: border-box;
+    margin: 30px 0;
+    button {
+        width: 100%;
+        cursor: pointer;
+    }
+}
+
+.tour-arrows {
+    color: rgba(255, 255, 255, 0.8);
+    width: 90%;
+    height: 350px;
+    position: absolute;
+    z-index: 2;
+    font-size: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.fa-chevron-left {
+    color: rgba(255, 255, 255, 0.8);
+    position: absolute;
+    top: 150px;
+    left: 20px;
+    z-index: 2;
+    font-size: 50px;
+}
+
+#tours-right-arrow {
+    color: rgba(255, 255, 255, 0.8);
+    position: absolute;
+    top: 150px;
+    right: 20px;
+    z-index: 2;
+    font-size: 50px;
+}
+
+@media screen and (min-width: 700px) {
+
+    .book-now-button {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width: 916px){
+    .tours-container {
+        display: flex;
+        flex-wrap: wrap;
+        height: auto;
+        position: unset;
+    }
+
+    #tours-right-arrow,
+    #tours-left-arrow {
+        display: none;
+    }
+
+}

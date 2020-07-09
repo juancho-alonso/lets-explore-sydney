@@ -1,0 +1,33 @@
+<nav>
+  <div class="hamburger-box">
+    <i class="fas fa-bars" id="hamburger-icon" (click)="toggleMenu()"></i>
+  </div>
+  <div class="menu-box">
+    <ul class="menu-list">
+      <li class="menu-list-item" data-id="home" (click)="onNavScroll($event)">Home</li>
+      <li class="menu-list-item" data-id="about" (click)="onNavScroll($event)">About Us</li>
+      <li class="menu-list-item" data-id="trips" (click)="onNavScroll($event)">Trips</li>
+      <li class="menu-list-item" data-id="safety" (click)="onNavScroll($event)">FAQ and Safety</li>
+      <li class="menu-list-item" data-id="contact" (click)="onNavScroll($event)">Contact</li>
+    </ul>
+  </div>
+  <div class="icons-box">
+    <a href="https://www.facebook.com/letsexploresydney/" target="_blank"><i class="fab fa-facebook-square"
+        id="facebook-icon"></i></a>
+    <a href="https://www.instagram.com/letsexploresydney/" target="_blank"><i
+        class="fab fa-instagram-square" id="instagram-icon"></i></a>
+  </div>
+</nav>
+<div id="hamburger-menu" *ngIf="showMenu">
+  <div id="hamburger-menu-box">
+    <ul class="hamburger-menu-list">
+      <li class="hamburger-menu-item" data-id="home" (click)="onNavMobile($event)">Home</li>
+      <li class="hamburger-menu-item" data-id="about" (click)="onNavMobile($event)">About Us</li>
+      <li class="hamburger-menu-item" data-id="trips" (click)="onNavMobile($event)">Trips</li>
+      <li class="hamburger-menu-item" data-id="safety" (click)="onNavMobile($event)">FAQ and Safety</li>
+      <li class="hamburger-menu-item" data-id="contact" (click)="onNavMobile($event)">Contact</li>
+    </ul>
+  </div>
+  <div id="menu-opaque"></div>
+</div>
+

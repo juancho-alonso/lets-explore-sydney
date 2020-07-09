@@ -1,0 +1,20 @@
+<div *ngFor="let tour of toursArray" class="tours-img-and-text">
+    <div class="tours-picture">
+      <img src="{{ tour.tourImg }}">
+    </div>
+    <div class="tours-text">
+      <div class="tours-title-box">
+        <h2 class="tours-title">{{ tour.tourTitle }}</h2>
+      </div>
+      <div class="tours-features">
+        <div class="tours-features-lenght">
+          <span class="tours-type">{{ tour.tourType }}</span>
+          <span class="tours-time"> ({{ tour.tourDuration }}) </span>
+        </div>
+        <div class="tours-features-others">
+          <span class="tours-fitness">Fitness: {{ tour.tourFitness }} / </span>
+          <span class="tours-price">${{ tour.tourPrice }}</span>
+        </div>
+      </div>
+    </div>
+  </div>

@@ -1,0 +1,65 @@
+.booking-section {
+    height: 600px;
+    background-color: #FFFFF3;
+    h1{
+        border-bottom: solid black 2px;
+    }
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+}
+
+#full-name {
+    height: 40px;
+} 
+
+#email {
+    height: 40px;
+}
+
+#message{
+    padding-top: 15px;
+    padding-bottom: 100px;
+}
+
+@media screen and (min-width: 700px) {
+    
+    .send-button {
+        display: flex;
+        align-self: flex-end;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+}
+
+@media screen and (min-width: 916px){
+
+    .booking-section {
+        padding: 50px;
+    }
+
+    .booking-section h1{
+        margin-top: 0;
+        text-align: left;
+    }
+
+    #message {
+        padding-bottom: 170px;
+    }
+
+    .name-mail-container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .name-container {
+        width: 48.5%;
+    }
+
+    .email-container {
+        width: 48.5%;
+    }
+}

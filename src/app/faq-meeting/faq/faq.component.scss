@@ -1,0 +1,23 @@
+.question-tiles {
+    margin-bottom: 23px;
+}
+
+h1 {
+    color: #E0DDD9;
+    border-color: #E0DDD9;
+}
+
+@media screen and (min-width: 916px){
+    .container-faq {
+        width: 100%;
+    }
+
+    .faq-section {
+        padding: 15px 50px 20px 50px;
+    }
+
+    h1 {
+        text-align: left;
+    }
+}
+

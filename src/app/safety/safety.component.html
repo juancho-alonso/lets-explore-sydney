@@ -1,0 +1,12 @@
+<section class="safety-section">
+    <h1>SAFETY TIPS</h1>
+    <div class="container">
+      <div class="tiles-slider">
+        <div class="safety-tiles-container" id="safety-slider-box">
+          <app-safety-tiles [ngStyle]="{display: 'contents'}"></app-safety-tiles>
+        </div>
+        <i class="fas fa-chevron-left" id="safety-left-arrow" (click)="slideTileRight()"></i>
+        <i class="fas fa-chevron-right" id="safety-right-arrow" (click)="slideTileLeft()"></i>
+      </div>
+    </div>
+  </section>

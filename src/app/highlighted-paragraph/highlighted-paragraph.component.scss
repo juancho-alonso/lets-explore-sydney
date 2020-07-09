@@ -1,0 +1,15 @@
+.highlighted-paragraph {
+    color: #E0DDD9;
+    background-color: #211A21;
+    width: 100%;
+    height: fit-content;
+    text-align: center;
+    line-height: 2;
+    font-size: 22px;
+    padding: 40px 0;
+}
+@media screen and (min-width: 916px){
+    .container-highlighted {
+        padding: 0 100px;
+    }
+}

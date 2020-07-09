@@ -1,0 +1,31 @@
+<section class="booking-section navigation-box">
+    <div class="navigation" id="contact" #contact></div>
+    <div class="container">
+      <h1>BOOK YOUR TRIP</h1>
+      <div class="form-container">
+        <div class="name-mail-container">
+          <div class="name-container">
+            <form action="/action_page.php">
+              <label for="fullname" class="labels">Full Name</label>
+              <input type="text" id="full-name" class="inputs" name="fullname" placeholder="Jane Doe">
+            </form>
+          </div>
+          <div class="email-container">
+            <form>
+              <label for="email" class="labels">Email</label>
+              <input type="email" id="email" class="inputs" name="email"
+                placeholder="janedoe@mail.com">
+            </form>
+          </div>
+        </div>
+        <div class="message-container">
+          <form action="/action_page.php">
+            <label for="message" class="labels">Message</label>
+            <input type="text" id="message" class="inputs" name="message"
+              placeholder="Your message, here...">
+          </form>
+        </div>
+      </div>
+      <button class="send-button" id="send-btn" (click)="checkInputs()">Send</button>
+    </div>
+  </section>

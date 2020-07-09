@@ -1,0 +1,14 @@
+<section class="tours-section navigation-box">
+    <div class="container">
+      <div class="tours-slider">
+        <div class="tours-container" id="tours-slider-box" #toursSlider>
+        <app-tour-cards [ngStyle]="{display: 'contents'}"></app-tour-cards>
+        </div>
+      </div>
+      <i class="fas fa-chevron-left" id="tours-left-arrow" (click)="slideTourRight()"></i><i class="fas fa-chevron-right"
+        id="tours-right-arrow" (click)="slideTourLeft()"></i>
+      <div class="book-now-button">
+        <button data-id="contact" (click)="onButtonScroll()">Book Now</button>
+      </div>
+    </div>
+  </section>
